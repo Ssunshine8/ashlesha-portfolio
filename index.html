@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashlesha Singh | Ruby on Rails Developer</title>
+  <style>
+    /* General */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    a { text-decoration: none; color: #0d6efd; }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      padding: 5px 10px;
+      transition: background 0.3s, color 0.3s;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background: #0d6efd;
+      color: white;
+    }
+
+    /* Header */
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0; font-size: 32px; }
+    header p { margin: 10px 0 0 0; font-size: 18px; }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 20px;
+    }
+
+    h2 {
+      color: #0d6efd;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    /* Two-column layout */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Skills */
+    .skills span {
+      display: inline-block;
+      background: #e9ecef;
+      padding: 6px 10px;
+      margin: 4px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 20px;
+      background: #222;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .row { flex-direction: column; }
+      header { padding: 40px 15px 25px; }
+      section { padding: 20px 15px; }
+      nav ul { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Ashlesha Singh</h1>
+  <p>Ruby on Rails Developer | 6+ Years Experience</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Senior Ruby on Rails developer with 6+ years and 2 years in ReactJS of experience building scalable, high-performance web applications. 
+    Skilled in designing system architecture, developing robust features, and optimizing application performance. 
+    I write clean, maintainable code and collaborate effectively with teams to achieve business goals.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="skills">
+    <span>Ruby on Rails</span>
+    <span>ReactJS</span>
+    <span>JavaScript</span>
+    <span>MySQL</span>
+    <span>PostgreSQL</span>
+    <span>Redis</span>
+    <span>REST APIs</span>
+    <span>Sidekiq</span>
+    <span>RSpec</span>
+    <span>AWS (Basic)</span>
+    <span>Docker</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h3>Persistent Systems</h3>
+        <p>Senior Software Developer | Apr 2024 – Apr 2025</p>
+      </div>
+      <div class="card">
+        <h3>Taskcraft Technologies</h3>
+        <p>Senior Software Developer | Nov 2023 – Apr 2024</p>
+      </div>
+      <div class="card">
+        <h3>Gammastack</h3>
+        <p>Senior Solution Engineer | Jan 2021 – Oct 2023</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <h3>Emorphis Technologies</h3>
+        <p>Software Engineer | May 2021 – Dec 2021</p>
+      </div>
+      <div class="card">
+        <h3>Thoughtmines Infotech Pvt Ltd</h3>
+        <p>Software Developer | Jan 2018 – May 2021</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Marketplace Payment UI</h3>
+    <p>Stripe-based payment system supporting multiple pricing models with RSpec tests.</p>
+  </div>
+  <div class="card">
+    <h3>Vincere Tax Platform</h3>
+    <p>Client collaboration platform with API integrations and secure data handling.</p>
+  </div>
+  <div class="card">
+    <h3>Fundraiser Auction System</h3>
+    <p>Online auction platform with payments, reporting, and real-time updates.</p>
+  </div>
+  <div class="card">
+    <h3>ACMS & School-IT</h3>
+    <p>School management systems with multi-tenancy, payment gateways, and reports.</p>
+  </div>
+  <div class="card">
+    <h3>Beacon Research System</h3>
+    <p>Compliance-driven platform with REST APIs, SQL optimization, and 2FA integration.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: ashleshasingh8@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ashlesha-singh-a6806871/">LinkedIn</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Ashlesha Singh</p>
+</footer>
+
+</body>
+</html>
